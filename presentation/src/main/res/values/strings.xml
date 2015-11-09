@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TweetsFinder</string>
+    <string name="search_hint">Search Tweets…</string>
+    <string name="retry">Retry</string>
+</resources>

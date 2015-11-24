@@ -14,6 +14,11 @@ android {
         versionCode globalConfiguration.getAt("androidVersionCode")
         versionName globalConfiguration.getAt("androidVersionName")
         archivesBaseName = "TweetsFinder-$versionName"
+
+        buildConfigField "String", "OAUTH_CONSUMER_KEY", "\"REPLACE_HERE\""
+        buildConfigField "String", "OAUTH_CONSUMER_SECRET", "\"REPLACE_HERE\""
+        buildConfigField "String", "OAUTH_ACCESS_TOKEN", "\"REPLACE_HERE\""
+        buildConfigField "String", "OAUTH_ACCESS_TOKEN_SECRET", "\"REPLACE_HERE\""
     }
 
     buildTypes {

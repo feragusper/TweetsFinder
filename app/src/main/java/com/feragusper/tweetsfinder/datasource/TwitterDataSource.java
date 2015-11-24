@@ -1,5 +1,6 @@
 package com.feragusper.tweetsfinder.datasource;
 
+import com.feragusper.tweetsfinder.BuildConfig;
 import com.feragusper.tweetsfinder.model.Tweet;
 
 import java.util.ArrayList;
@@ -26,10 +27,10 @@ public class TwitterDataSource {
 
     public TwitterDataSource() {
         final ConfigurationBuilder configurationBuilder = new ConfigurationBuilder()
-                .setOAuthConsumerKey("vMU46H2kwxPThrHGNJwt8wru1")
-                .setOAuthConsumerSecret("vhJLR5gsBO8AF5MkJV6lL8hotizmgeOR39tQau3eVIGcZmgn1P")
-                .setOAuthAccessToken("388502124-vQcoSLVfZ5BpAQFPphsFagdutRRFwh0g7HpiCwv6")
-                .setOAuthAccessTokenSecret("03L4QssLl9k1cMawuQLq6o7wrE4FLhDHrrZBk4V8BnEmn");
+                .setOAuthConsumerKey(BuildConfig.OAUTH_CONSUMER_KEY)
+                .setOAuthConsumerSecret(BuildConfig.OAUTH_CONSUMER_SECRET)
+                .setOAuthAccessToken(BuildConfig.OAUTH_ACCESS_TOKEN)
+                .setOAuthAccessTokenSecret(BuildConfig.OAUTH_ACCESS_TOKEN_SECRET);
         twitter = new TwitterFactory(configurationBuilder.build()).getInstance();
     }
 

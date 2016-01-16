@@ -1,0 +1,8 @@
+android {
+    defaultConfig {
+        buildConfigField "String", "OAUTH_CONSUMER_KEY", "\"OAUTH_CONSUMER_KEY\""
+        buildConfigField "String", "OAUTH_CONSUMER_SECRET", "\"OAUTH_CONSUMER_SECRET\""
+        buildConfigField "String", "OAUTH_ACCESS_TOKEN", "\"OAUTH_ACCESS_TOKEN\""
+        buildConfigField "String", "OAUTH_ACCESS_TOKEN_SECRET", "\"OAUTH_ACCESS_TOKEN_SECRET\""
+    }
+}

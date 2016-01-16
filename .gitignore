@@ -1,3 +1,4 @@
+/buildsystem/extension.gradle
 .gradle
 /local.properties
 /.idea/workspace.xml

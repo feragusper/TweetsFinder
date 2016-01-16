@@ -25,7 +25,7 @@ Pull requests are welcome :)
 
 Build Configuration
 -----------------
-In order to set up the oauth keys you'll need to get them from your twitter account and replace the build config variables within the build.gradle of the app module
+In order to set up the oauth keys you'll need to get them from your twitter account and replace the build config variables within the buildsystem/extension.gradle file
 
 Requirements
 -----------------
